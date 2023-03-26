@@ -221,12 +221,12 @@ img {
 }
 .modal {
   position: absolute;
+  height: auto;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 24px;
-  width: 408px;
-  height: 576px;
+
   border-radius: 4px;
   background-color: #fcfcfc;
   transition-property: transfrom;
@@ -240,9 +240,9 @@ img {
 }
 
 .modal-close {
-  position: absolute;
-  right: 24px;
-  top: 24px;
+  display: block;
+  margin-left: auto;
+  margin-bottom: 24px;
   width: 24px;
   height: 24px;
   background-color: var(--accent-color);
@@ -260,6 +260,86 @@ img {
   fill: var(--white-color);
 }
 
+/* ------------------ Form ------------------- */
+
+.form {
+  width: 360px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.form-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
+}
+.form-field div:last-child {
+  margin-bottom: 16px;
+}
+
+.form-input {
+  margin: 0;
+  padding: 0;
+  padding: 8px 16px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+.form-input::placeholder {
+  font-size: var(--small-text-font);
+  color: rgba(117, 117, 117, 0.5);
+  line-height: 1.333;
+  letter-spacing: 0.04em;
+}
+.form-label {
+  font-size: var(--small-text-font);
+  color: var(--helper-text-color);
+  line-height: 1.166;
+  letter-spacing: 0.01em;
+  margin-bottom: 4px;
+}
+.form-checkbox {
+  margin-bottom: 24px;
+}
+.form-checkbox label {
+  display: inline-block;
+  margin: 0;
+  margin-left: 8px;
+  font-size: var(--small-text-font);
+  letter-spacing: 0.04em;
+  line-height: 1.333;
+  color: rgba(117, 117, 117, 1);
+}
+.form-checkbox a {
+  color: var(--primary-brand-color);
+}
+.form-title {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 16px;
+  font-size: var(--general-text-font);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+  color: var(--primary-heading-color);
+}
+textarea {
+  resize: none;
+}
+.form-button {
+  min-width: 169px;
+  display: block;
+  margin: 0 auto;
+
+  padding: 16px 32px;
+  color: var(--white-color);
+  font-family: inherit;
+  font-size: var(--general-text-font);
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--primary-brand-color);
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+}
 /* ------------------ Hero ------------------- */
 .hero {
   max-width: 1440px;
